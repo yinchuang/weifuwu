@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>gateway-server</artifactId>
+    <artifactId>gateway-service</artifactId>
     <dependencies>
         <!--网关的依赖-->
         <dependency>
