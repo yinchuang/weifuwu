@@ -9,7 +9,7 @@
     <modules>
         <module>a-service</module>
         <module>b-service</module>
-        <module>b-service</module>
+        <module>c-service</module>
         <module>gateway-service</module>
     </modules>
     <packaging>pom</packaging>
