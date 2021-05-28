@@ -28,5 +28,5 @@ jobs:
       run: ls
       shell: bash  
     - name: Build with Maven    
-      run: mvn -B package --file pom.xml
-      working-directory: /home/runner/work/weifuwu
+      run: mvn package
+      #working-directory: /home/runner/work/weifuwu
