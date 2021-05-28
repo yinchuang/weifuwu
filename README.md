@@ -1,3 +1,2 @@
-gateway,serviceA,serviceB,serviceC,serviceC,serviceD
+gateway,serviceA,serviceB,serviceC
 gateway-->A-->B-->C
-gateway-->A-->C-->D
