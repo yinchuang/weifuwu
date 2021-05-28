@@ -25,6 +25,7 @@ jobs:
         distribution: 'adopt'
         architecture: x64
     - name: Build with Maven
-      run: echo $PATH
+      run: pwd
       shell: bash
       #run: mvn -B package -X --file pom.xml
+      #working-directory: /home/run/work/weifuwu
