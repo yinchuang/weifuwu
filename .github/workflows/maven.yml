@@ -25,4 +25,6 @@ jobs:
         distribution: 'adopt'
         architecture: x64
     - name: Build with Maven
-      run: mvn -B package -X --file pom.xml
+      run: echo $PATH
+      shell: bash
+      #run: mvn -B package -X --file pom.xml
