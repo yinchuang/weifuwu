@@ -23,10 +23,6 @@ jobs:
       with:
         java-version: '8'
         distribution: 'adopt'
-        architecture: x64
-    - name: ls workdir
-      run: ls
-      shell: bash  
+        architecture: x64 
     - name: Build with Maven    
-      run: mvn package
-      #working-directory: /home/runner/work/weifuwu
+      run: mvn -B package --file pom.xml
