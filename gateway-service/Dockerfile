@@ -1,5 +1,5 @@
 FROM maven:3.6-openjdk-8 as builder
-COPY ./* /opt/
+COPY gateway-service /opt/gateway-service
 RUN ls /opt/
 RUN mvn -f /opt/gateway-service/pom.xml clean package
 
