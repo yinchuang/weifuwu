@@ -51,5 +51,11 @@
             <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
-
+    <distributionManagement>
+      <repository>
+        <id>github</id>
+        <name>GitHub Packages</name>
+        <url>https://maven.pkg.github.com/yinchuang/weifuwu</url>
+      </repository>
+    </distributionManagement>
 </project>
