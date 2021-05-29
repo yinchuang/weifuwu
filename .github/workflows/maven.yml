@@ -31,7 +31,7 @@ jobs:
       with:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
-        dockerfile: home/runner/work/weifuwu/weifuwu/a-service/Dockerfile
+        dockerfile: /home/runner/work/weifuwu/weifuwu/a-service/Dockerfile
         registry: docker.pkg.github.com
         repository: yinchuang/weifuwu/aservice
         tag_with_ref: true
