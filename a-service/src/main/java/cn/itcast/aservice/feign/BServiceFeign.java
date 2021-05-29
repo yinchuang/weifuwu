@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 
-@FeignClient("bservice")
+@FeignClient(value = "bservice")
 public interface BServiceFeign {
 
     @GetMapping("/bservice")
