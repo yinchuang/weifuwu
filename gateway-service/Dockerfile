@@ -1,6 +1,5 @@
 FROM maven:3.6-openjdk-8 as builder
-COPY /home/runner/work/weifuwu/weifuwu/gateway-service/src /opt/src
-COPY /home/runner/work/weifuwu/weifuwu/gateway-service/pom.xml /opt/pom.xml
+COPY /github/workspace/gateway-service /opt/gateway
 RUN mvn -f /opt/pom.xml clean package
 
 FROM openjdk:8-jdk-alpine
