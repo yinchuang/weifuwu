@@ -1,5 +1,6 @@
 FROM maven:3.6-openjdk-8 as builder
 COPY ./* /opt/
+RUN ls /opt/
 RUN mvn -f /opt/gateway-service/pom.xml clean package
 
 FROM openjdk:8-jdk-alpine
