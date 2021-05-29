@@ -30,7 +30,7 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
         dockerfile: /home/runner/work/weifuwu/weifuwu/gateway-service/Dockerfile
-        path: /home/runner/work/weifuwu/weifuwu
+        path: /home/runner/work/weifuwu
         registry: docker.pkg.github.com
         repository: yinchuang/weifuwu/gateway
         tag_with_ref: true
