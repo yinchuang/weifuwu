@@ -10,14 +10,9 @@ on:
     branches: [ main ]
 
 jobs:
-#  build:
-#  publish:
-  push_to_registry:
-    name: Push Docker image to GitHub Packages
+  build:
     runs-on: ubuntu-latest
-    permissions: 
-      contents: read
-      packages: write
+
     steps:
     - name: Check out the repo
       uses: actions/checkout@v2
@@ -29,12 +24,12 @@ jobs:
         architecture: x64 
     - name: Build with Maven    
       run: mvn -B package --file pom.xml
-    - name: Push aservice to GitHub Packages
-      uses: docker/build-push-action@v1
-      with:
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
-        registry: docker.pkg.github.com
-        repository: yinchuang/weifuwu/aservice
-        tag_with_ref: true
-      working-directory: /home/runner/work/weifuwu/weifuwu/aservice
+#    - name: Push aservice to GitHub Packages
+#      uses: docker/build-push-action@v1
+#      with:
+#        username: ${{ github.actor }}
+#        password: ${{ secrets.GITHUB_TOKEN }}
+#        registry: docker.pkg.github.com
+#        repository: yinchuang/weifuwu/aservice
+#        tag_with_ref: true
+#      working-directory: /home/runner/work/weifuwu/weifuwu/aservice
