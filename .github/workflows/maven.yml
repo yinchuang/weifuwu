@@ -24,12 +24,12 @@ jobs:
         architecture: x64 
     - name: Build with Maven    
       run: mvn -B package --file pom.xml
-    - name: Push aservice to GitHub Packages
+    - name: Push gateway to GitHub Packages
       uses: docker/build-push-action@v1
       with:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
-        dockerfile: /home/runner/work/weifuwu/weifuwu/a-service/Dockerfile
+        dockerfile: /home/runner/work/weifuwu/weifuwu/gateway-service/Dockerfile
         registry: docker.pkg.github.com
-        repository: yinchuang/weifuwu/aservice
+        repository: yinchuang/weifuwu/gateway
         tag_with_ref: true
