@@ -24,8 +24,6 @@ jobs:
         architecture: x64 
     - name: Build with Maven    
       run: mvn -B package --file pom.xml
-    - name: cd aservice dir
-      run: cd /home/runner/work/weifuwu/weifuwu/a-service/target/
     - name: Push aservice to GitHub Packages
       uses: docker/build-push-action@v1
       with:
