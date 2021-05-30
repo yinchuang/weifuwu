@@ -34,3 +34,37 @@ jobs:
         registry: docker.pkg.github.com
         repository: yinchuang/weifuwu/gateway
         tag_with_ref: true
+
+    - name: Push aservice to GitHub Packages
+      uses: docker/build-push-action@v1
+      with:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+        dockerfile: /home/runner/work/weifuwu/weifuwu/a-service/Dockerfile
+        path: /home/runner/work/weifuwu/weifuwu
+        registry: docker.pkg.github.com
+        repository: yinchuang/weifuwu/aservice
+        tag_with_ref: true
+
+    - name: Push bservice to GitHub Packages
+      uses: docker/build-push-action@v1
+      with:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+        dockerfile: /home/runner/work/weifuwu/weifuwu/b-service/Dockerfile
+        path: /home/runner/work/weifuwu/weifuwu
+        registry: docker.pkg.github.com
+        repository: yinchuang/weifuwu/bservice
+        tag_with_ref: true
+
+    - name: Push cservice to GitHub Packages
+      uses: docker/build-push-action@v1
+      with:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+        dockerfile: /home/runner/work/weifuwu/weifuwu/c-service/Dockerfile
+        path: /home/runner/work/weifuwu/weifuwu
+        registry: docker.pkg.github.com
+        repository: yinchuang/weifuwu/cservice
+        tag_with_ref: true
+
