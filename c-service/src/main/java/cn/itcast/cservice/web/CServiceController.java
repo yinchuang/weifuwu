@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping("cservice")
 public class CServiceController {
 
     @GetMapping("/cservice")
