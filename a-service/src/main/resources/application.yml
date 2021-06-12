@@ -6,4 +6,4 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848 #配置注册中心
+        server-addr: 127.0.0.1:80 #配置注册中心
