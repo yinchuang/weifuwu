@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface CServiceFeign {
 
     @GetMapping("/cservice")
-    public String cservice();
+    public String cservice(@RequestHeader Map<String, String> headers);
 }
