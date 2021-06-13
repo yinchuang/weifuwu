@@ -14,7 +14,7 @@ public class BServiceController {
     private CServiceFeign cServiceFeign;
 
     @GetMapping("/bservice")
-    public String bservice() {
+    public String bservice(String version) {
         String cResult = cServiceFeign.cservice();
         return "B--> " + cResult;
     }
