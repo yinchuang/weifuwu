@@ -13,7 +13,7 @@ public class AServiceController {
     BServiceFeign bServiceFeign;
 
     @GetMapping("/aservice")
-    public String aservice(){
+    public String aservice(@RequestHeader("version") String version){
         String bResult = bServiceFeign.bservice();
         return "A--> " + bResult;
     }
