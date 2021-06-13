@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.RequestHeader;
 public interface BServiceFeign {
 
     @GetMapping("/bservice")
-    public ResponseEntity<String> bservice(@RequestHeader("version") String version);
+    public String bservice(@RequestHeader("version") String version);
 }

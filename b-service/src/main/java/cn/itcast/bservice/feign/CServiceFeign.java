@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.RequestHeader;
 public interface CServiceFeign {
 
     @GetMapping("/cservice")
-    public ResponseEntity<String> cservice(@RequestHeader("version") String version);
+    public String cservice(@RequestHeader("version") String version);
 }
